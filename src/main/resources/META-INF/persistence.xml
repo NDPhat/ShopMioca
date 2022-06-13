@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+        <class>Model.AccountsEntity</class>
+        <class>Model.CategoriesEntity</class>
+        <class>Model.CcTransactionsEntity</class>
+        <class>Model.ColorsEntity</class>
+        <class>Model.OrderProductsEntity</class>
+        <class>Model.ProductStatusesEntity</class>
+        <class>Model.ProductsEntity</class>
+        <class>Model.ReviewsEntity</class>
+        <class>Model.RolesEntity</class>
+        <class>Model.SalesOrdersEntity</class>
+        <class>Model.TagsEntity</class>
+        <class>Model.UsersEntity</class>
+        <properties>
+
+            <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+
+<!--            <property name="toplink.jdbc.url" value="jdbc:postgresql://ec2-23-21-229-200.compute-1.amazonaws.com:5432/dfia69dvo71k9t"/>-->
+<!--            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-23-21-229-200.compute-1.amazonaws.com:5432/dfia69dvo71k9t"/>-->
+<!--            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://ec2-23-21-229-200.compute-1.amazonaws.com:5432/dfia69dvo71k9t"/>-->
+<!--            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://ec2-23-21-229-200.compute-1.amazonaws.com:5432/dfia69dvo71k9t"/>-->
+
+            <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost:5432/finalProject"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/finalProject"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost:5432/finalProject"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost:5432/finalProject"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
