@@ -44,6 +44,7 @@ public class AddorCheckRedirectController extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String path = request.getServletPath();
         //test push
+        //sua code trong day
         try {
             switch (path) {
                 case "/AddorCheckRedirectController/editQuantity":
